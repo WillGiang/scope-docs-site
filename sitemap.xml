@@ -1,53 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://example.com/</loc>
-         <lastmod>2022-01-05</lastmod>
+         <loc>https://willgiang.github.io/scope-docs/</loc>
+         <lastmod>2022-01-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/alignment/</loc>
-         <lastmod>2022-01-05</lastmod>
+         <loc>https://willgiang.github.io/scope-docs/alignment/</loc>
+         <lastmod>2022-01-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/nd-acquisition/</loc>
-         <lastmod>2022-01-05</lastmod>
+         <loc>https://willgiang.github.io/scope-docs/data-storage/</loc>
+         <lastmod>2022-01-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/resources/</loc>
-         <lastmod>2022-01-05</lastmod>
+         <loc>https://willgiang.github.io/scope-docs/light-paths-and-OCs/</loc>
+         <lastmod>2022-01-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/scope-body/</loc>
-         <lastmod>2022-01-05</lastmod>
+         <loc>https://willgiang.github.io/scope-docs/nd-acquisition/</loc>
+         <lastmod>2022-01-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/shut-down/</loc>
-         <lastmod>2022-01-05</lastmod>
+         <loc>https://willgiang.github.io/scope-docs/resources/</loc>
+         <lastmod>2022-01-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/start-up/</loc>
-         <lastmod>2022-01-05</lastmod>
+         <loc>https://willgiang.github.io/scope-docs/scope-body/</loc>
+         <lastmod>2022-01-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/tips-and-tricks/</loc>
-         <lastmod>2022-01-05</lastmod>
+         <loc>https://willgiang.github.io/scope-docs/shut-down/</loc>
+         <lastmod>2022-01-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/troubleshooting/</loc>
-         <lastmod>2022-01-05</lastmod>
+         <loc>https://willgiang.github.io/scope-docs/start-up/</loc>
+         <lastmod>2022-01-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/updates/</loc>
-         <lastmod>2022-01-05</lastmod>
+         <loc>https://willgiang.github.io/scope-docs/tips-and-tricks/</loc>
+         <lastmod>2022-01-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://willgiang.github.io/scope-docs/troubleshooting/</loc>
+         <lastmod>2022-01-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://willgiang.github.io/scope-docs/updates/</loc>
+         <lastmod>2022-01-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

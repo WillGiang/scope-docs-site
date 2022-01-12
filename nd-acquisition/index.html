@@ -8,10 +8,10 @@
       
       
       
-        <link rel="canonical" href="https://example.com/nd-acquisition/">
+        <link rel="canonical" href="https://willgiang.github.io/scope-docs/nd-acquisition/">
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.4">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.6">
     
     
       
@@ -19,7 +19,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.bb3983ee.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.cd566b2a.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
@@ -56,7 +56,7 @@
   
     
     
-      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)</script>
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -386,8 +386,36 @@
   
   
     <li class="md-nav__item">
+      <a href="../light-paths-and-OCs/" class="md-nav__link">
+        Lightpaths and OCs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../scope-body/" class="md-nav__link">
         Nikon Ti2-E
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data-storage/" class="md-nav__link">
+        Where to save data
       </a>
     </li>
   
@@ -722,7 +750,13 @@
 
 <h1 id="nd-acquisition">ND Acquisition<a class="headerlink" href="#nd-acquisition" title="Permanent link">#</a></h1>
 <p>The <code>ND Acquisition</code> window within NIS-Elements allows users to configure N-Dimensional imaging.</p>
-<p>There are five tabs: <strong>Time</strong>, <strong>XY</strong> (Multipoint), <strong>Large Image</strong> (for tiling/stitching), <span class="arithmatex">\(\lambda\)</span> (for multiple channels/<abbr title="Optical Configurations">OCs</abbr>), and <strong>Z</strong>. </p>
+<p>There are five tabs: <strong>Time</strong>, <strong>XY</strong> (Multipoint), <strong>Large Image</strong> (for tiling/stitching), <span class="arithmatex">\(\lambda\)</span> (for multiple channels/<abbr title="Optical Configurations">OCs</abbr>), and <strong>Z</strong>.</p>
+<p>When multiple dimensions are required, NIS-Elements will default to the fastest order of experiment, but the "Order of Experiment" can be changed.</p>
+<figure>
+<p><img alt="Order of Experiment in ND Acquisition" src="../img/Order-of-Experiment.png" width="800" /></p>
+<figcaption>Options for "Order of Experiment" with the fastest selected by default. Here, a z-stack will be acquired before switching to different channels and finally a large image will be acquired.
+</figcaption>
+</figure>
 <h2 id="time">Time<a class="headerlink" href="#time" title="Permanent link">#</a></h2>
 <p>The <code>Time</code> tab allows for (complex) timelapse imaging.</p>
 <div class="admonition tip">
@@ -772,7 +806,7 @@
 </ul>
 </div>
 <figure>
-<p><img alt="channels set up example" src="../img/ND-acquisition-lambda-set-two-channels-FO.gif" width="800" /></p>
+<p><img alt="channels set up example" loading="lazy" src="../img/ND-acquisition-lambda-set-two-channels-FO.gif" width="800" /></p>
 <figcaption>Animation of setting up channels in a preferred order and setting Focus Offsets
 </figcaption>
 </figure>
@@ -787,14 +821,14 @@
 </div>
 <h3 id="using-absolute-limits">Using absolute limits<a class="headerlink" href="#using-absolute-limits" title="Permanent link">#</a></h3>
 <figure>
-<p><img alt="Z-stack set up ND Acquisition using absolute limits" src="../img/ND-acquisition-z-stack-absolute-limits.gif" width="800" /></p>
+<p><img alt="Z-stack set up ND Acquisition using absolute limits" loading="lazy" src="../img/ND-acquisition-z-stack-absolute-limits.gif" width="800" /></p>
 <figcaption>Z-stack limits using absolute limits
 </figcaption>
 </figure>
 <h3 id="using-symmetric-mode">Using symmetric mode<a class="headerlink" href="#using-symmetric-mode" title="Permanent link">#</a></h3>
 <p>You may be forced away from using absolute limits because you're using focus offsets or <abbr title="Nikon's Perfect Focus System">PFS</abbr>.</p>
 <figure>
-<p><img alt="Z-stack set up ND Acquisition using symmetric relative mode" src="../img/ND-acquisition-z-stack-symmetric-mode-from-absolute-limits.gif" width="800" /></p>
+<p><img alt="Z-stack set up ND Acquisition using symmetric relative mode" loading="lazy" src="../img/ND-acquisition-z-stack-symmetric-mode-from-absolute-limits.gif" width="800" /></p>
 <figcaption>Z-stack limits using symmetric mode defined by range (when previously defined using absolute limits)
 </figcaption>
 </figure>
@@ -834,7 +868,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../scope-body/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Nikon Ti2-E" rel="prev">
+        <a href="../data-storage/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Where to save data" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -843,7 +877,7 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Nikon Ti2-E
+              Where to save data
             </div>
           </div>
         </a>
@@ -899,10 +933,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.expand"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.361d90f1.min.js"}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.expand"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.22074ed6.min.js"}</script>
     
     
-      <script src="../assets/javascripts/bundle.289a2a4b.min.js"></script>
+      <script src="../assets/javascripts/bundle.1514a9a0.min.js"></script>
       
         <script src="../javascripts/mathjax.js"></script>
       
