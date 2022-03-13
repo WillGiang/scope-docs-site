@@ -8,14 +8,14 @@
       
       
       
-        <link rel="canonical" href="https://willgiang.github.io/scope-docs/camera/">
+        <link rel="canonical" href="https://willgiang.github.io/scope-docs/FRAP/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.4">
     
     
       
-        <title>Camera - Junction League Nikon X1</title>
+        <title>FRAP / Photostimulation - Junction League Nikon X1</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#bit-depth" class="md-skip">
+        <a href="#photostimulate-rois" class="md-skip">
           Skip to content
         </a>
       
@@ -97,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Camera
+              FRAP / Photostimulation
             
           </span>
         </div>
@@ -487,62 +487,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Camera
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../camera/" class="md-nav__link">
         Camera
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#bit-depth" class="md-nav__link">
-    Bit Depth
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#scan-mode" class="md-nav__link">
-    Scan Mode
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#roi" class="md-nav__link">
-    ROI
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -566,11 +515,65 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../FRAP/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          FRAP / Photostimulation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         FRAP / Photostimulation
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#calibration" class="md-nav__link">
+    Calibration
+  </a>
+  
+    <nav class="md-nav" aria-label="Calibration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-calibrate" class="md-nav__link">
+    How to calibrate:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -659,6 +662,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -667,23 +672,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#bit-depth" class="md-nav__link">
-    Bit Depth
+  <a href="#calibration" class="md-nav__link">
+    Calibration
+  </a>
+  
+    <nav class="md-nav" aria-label="Calibration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-calibrate" class="md-nav__link">
+    How to calibrate:
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#scan-mode" class="md-nav__link">
-    Scan Mode
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#roi" class="md-nav__link">
-    ROI
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -700,50 +704,55 @@
               
                 
 
-  <h1>Camera</h1>
-
-<h2 id="bit-depth">Bit Depth<a class="headerlink" href="#bit-depth" title="Permanent link">#</a></h2>
-<p>Elements offers three different bit-depth options which should be chosen based on your application</p>
-<dl>
-<dt><code>12-bit Sensitive</code></dt>
-<dd>
-<p><code>12-bit Sensitive</code> has the highest camera gain which makes it better for weak signals during <mark class="critic">live-cell imaging</mark>. It also has a camera offset of 100.</p>
-</dd>
-<dt><code>12-bit</code></dt>
-<dd>
-<p><code>12-bit</code> doesn't have camera offset -&gt; not recommended </p>
-</dd>
-<dt><code>16-bit</code></dt>
-<dd><code>16-bit</code> is best suited for high dynamic range imaging and also features a camera offset of 100. Suggested for <mark class="critic">fixed imaging</mark>.</dd>
-</dl>
-<h2 id="scan-mode">Scan Mode<a class="headerlink" href="#scan-mode" title="Permanent link">#</a></h2>
-<p>Three options with different read-out speeds/noise levels and restrictions on minimum exposure time</p>
-<dl>
-<dt><code>Ultra-quiet</code></dt>
-<dd>
-<p>lowest read-out noise at the expense of speed (not an issue for fixed imaging)</p>
-</dd>
-<dt><code>Standard</code></dt>
-<dd>
-<p>Should be considered the default for live-cell imaging</p>
-</dd>
-<dt><code>Fast</code></dt>
-<dd>
-<p>only recommended if you're doing very fast live-cell imaging (need very short exposures) and/or a difference of 10s of milliseconds matters (e.g. calcium imaging)</p>
-</dd>
-</dl>
-<h2 id="roi">ROI<a class="headerlink" href="#roi" title="Permanent link">#</a></h2>
+<h1 id="photostimulate-rois">Photostimulate <abbr title="Regions of Interest">ROIs</abbr>.<a class="headerlink" href="#photostimulate-rois" title="Permanent link">#</a></h1>
 <ul>
-<li>The CSU-X1 limits the field of view to a max of 7x10mm. With a 100x objective, this corresponds to 70um by 100um. </li>
-<li>Saved camera ROIs are saved in the Documents folder and can be loaded by clicking on the "ROI Size" button and pressing "Load ROI..." </li>
+<li>405nm laser</li>
+<li>simultaneous image acquisition during photostimulation</li>
+<li><code>ND Sequence Acquisition</code> allows for complex experiments with <code>ND Acquisition</code></li>
 </ul>
-<div class="admonition warning">
-<p class="admonition-title">Laser illumination is not even across the field of view</p>
-<ul>
-<li>If you care about intensity measurements or will be using intensities for thresholding, I suggest fixing post-acquisition with flat field correction (e.g. BioVoxxel's pseudo flat-field correction) </li>
-<li>If acquiring tiled images, consider using the multipoints tab for grid selection and stitching in Fiji later</li>
+<h2 id="calibration">Calibration<a class="headerlink" href="#calibration" title="Permanent link">#</a></h2>
+<p>The Galvo XY unit needs to be calibrated before use, but you can save/load calibration files for future use. Different calibration files are needed between single-cam and dual cam modes.</p>
+<p>Currently, we should have calibration files for the 60x (single-cam) and 100x (single-cam and dual cam) objectives (at 37C). These calibration files should be accurate for the lower mag objectives, but since no one's FRAPing with them, it's been low on my priority list to check.</p>
+<h3 id="how-to-calibrate">How to calibrate:<a class="headerlink" href="#how-to-calibrate" title="Permanent link">#</a></h3>
+<ol>
+<li>Load a slide with a fluorophore that would be bleached or activatable with a 405nm laser.<ul>
+<li>For 60x/100x objectives, reasonably confluent cell monolayers work fine</li>
 </ul>
-</div>
+</li>
+<li>Select a FRAP <abbr title="Optical Configuration">OC</abbr> (or move the upper turret such that the 405-FRAP filtercube is in place)<ul>
+<li>Change the bit-depth to 16-bit to avoid oversaturation. </li>
+<li>Set exposure time to something low like 50ms</li>
+</ul>
+</li>
+<li>Uncheck the camera <abbr title="Region of Interest">ROI</abbr> <ul>
+<li>N.B.: The calibration must be done without any camera <abbr title="Region of Interest">ROI</abbr> selected.</li>
+</ul>
+</li>
+<li>Open the "Galvy XY" window and set laser power to something like 1.5%</li>
+<li>Open Galvo XY settings by clicking on the gear icon</li>
+<li>Set "Volts low" to -1.5 and "Volts high" to 1.5</li>
+<li>Press "Calibrate"<ul>
+<li>Use "Toggle (Reflect laser)" instead of "Manual (Bleach point)"</li>
+<li>Check the box for "Invert Y Axis" while making sure that "Invert X Axis" is unchecked</li>
+</ul>
+</li>
+<li>Choose spots for the laser to go to and then tell the software where the center of the spot is.<ul>
+<li>Click on a spot in any quadrant while remaining somewhat close to the center until you get a sense for how far away you can go<ul>
+<li>If your chosen spot is within the camera <abbr title="Region of Interest">ROI</abbr>, you should see a bright spot in the Live view </li>
+</ul>
+</li>
+<li>Move the red cross to the center of the focused laser point.<ul>
+<li>Set the LUT settings appropriately--the buttons for autoscaling LUT may come in handy.</li>
+<li>Make sure you zoom in to be sure you're choosing the right pixel.</li>
+</ul>
+</li>
+<li>When satisfied that the red cross is in the center, press the + symbol within the Galvo XY to add </li>
+<li>Repeat until the usable field of view is well sampled. Aim for at least 12 throughout the rectangular <abbr title="Field of View">FOV</abbr>.</li>
+</ul>
+</li>
+<li>Hit "Next" when satisfied and test by drawing an <abbr title="Region of Interest">ROI</abbr> and stimulating it.</li>
+</ol>
+<p><a href="https://psu.zoom.us/rec/share/CtyUWup_tCVmKwGcjGeF0s9JJc-LnLha3FGrZRLgVMIBYE4xmCsy5GvWvipZ0h94.Gp_ao1RVHImE3GGo?startTime=1642801429000">Click to view a screen recording of me calibrating</a></p>
 
               
             </article>
@@ -757,7 +766,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../brightfield/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Brightfield" rel="prev">
+        <a href="../alignment/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Dual Camera Alignment" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -766,20 +775,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Brightfield
+              Dual Camera Alignment
             </div>
           </div>
         </a>
       
       
         
-        <a href="../alignment/" class="md-footer__link md-footer__link--next" aria-label="Next: Dual Camera Alignment" rel="next">
+        <a href="../tips-and-tricks/" class="md-footer__link md-footer__link--next" aria-label="Next: Tips and Tricks" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Dual Camera Alignment
+              Tips and Tricks
             </div>
           </div>
           <div class="md-footer__button md-icon">
