@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://willgiang.github.io/scope-docs/light-paths-and-OCs/">
+        <link rel="canonical" href="https://willgiang.github.io/scope-docs-site/light-paths-and-OCs/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.6">
@@ -584,6 +584,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FRAP/" class="md-nav__link">
+        FRAP / Photostimulation
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -772,25 +786,47 @@ Animation of switching between OCs to show changing filters and Sola power. The 
 <div class="tabbed-set tabbed-alternate" data-tabs="2:4"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Single Camera 405</label><label for="__tabbed_2_2">Single Camera 488</label><label for="__tabbed_2_3">Single Camera 561</label><label for="__tabbed_2_4">Single Camera 640</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p><img alt="SC-488" src="../img/light-path_single-cam-405.png" /></p>
+<p><img alt="SC-405" src="../img/light-path_single-cam-405.png" /></p>
 </div>
 <div class="tabbed-block">
 <p><img alt="SC-488" src="../img/light-path_single-cam-488.png" /></p>
 </div>
 <div class="tabbed-block">
-<p><img alt="SC-488" src="../img/light-path_single-cam-561.png" /></p>
+<p><img alt="SC-561" src="../img/light-path_single-cam-561.png" /></p>
 </div>
 <div class="tabbed-block">
-<p><img alt="SC-488" src="../img/light-path_single-cam-640.png" /></p>
+<p><img alt="SC-640" src="../img/light-path_single-cam-640.png" /></p>
 </div>
 </div>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Both brightfield and fluorescence imaging will be "confocal"<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> because the spinning disk can't be moved out of the light path. Light throughput for brightfield is reduced, and the quality of DIC is also impaired. </p>
+<p>Both brightfield and fluorescence imaging will be "confocal"<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> because the spinning disk can't be moved out of the light path. Light throughput for brightfield is drastically reduced, and the quality of DIC is also impaired. </p>
 </div>
 <h4 id="dual-camera">Dual camera<a class="headerlink" href="#dual-camera" title="Permanent link">#</a></h4>
-<p>A long pass filter<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>, which will reflect wavelengths below 570nm, is inserted into the TwinCam unit. The back filter wheel has DAPI and FITC emission filters, but the main use-case is simultaneous imaging of green and red fluorophores.</p>
+<p>A long pass filter<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>, which will reflect light below 570nm towards the "Back Fusion BT", is inserted into the TwinCam unit. The back filter wheel has DAPI and FITC emission filters, but the main use-case is simultaneous imaging of green and red fluorophores. </p>
+<p>Concerns when using dual camera mode:</p>
+<ol>
+<li>Spectral bleed-through</li>
+<li>Registration between cameras</li>
+<li>Slight (5%) loss in light due to imperfect transmission of the TwinCam <abbr title="Dichroic Mirror">DM</abbr> <sup id="fnref2:2"><a class="footnote-ref" href="#fn:2">2</a></sup>.</li>
+</ol>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:4"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Dual Camera 405-561</label><label for="__tabbed_3_2">Dual Camera 405-640</label><label for="__tabbed_3_3">Dual Camera 488-561</label><label for="__tabbed_3_4">Dual Camera 488-640</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><img alt="SC-405" src="../img/light-path_dual-cam-405-561.jpg" /></p>
+</div>
+<div class="tabbed-block">
+<p><img alt="SC-488" src="../img/light-path_dual-cam-405-640.jpg" /></p>
+</div>
+<div class="tabbed-block">
+<p><img alt="SC-561" src="../img/light-path_dual-cam-488-561.jpg" /></p>
+</div>
+<div class="tabbed-block">
+<p><img alt="SC-640" src="../img/light-path_dual-cam-488-640.jpg" /></p>
+</div>
+</div>
+</div>
 <div class="footnote">
 <hr />
 <ol>
@@ -798,7 +834,7 @@ Animation of switching between OCs to show changing filters and Sola power. The 
 <p>The spinning disk pattern is optimized for high NA objectives&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 <li id="fn:2">
-<p>Semrock Di02-R561 https://www.semrock.com/FilterDetails.aspx?id=DI02-R561&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+<p><a href="https://www.semrock.com/FilterDetails.aspx?id=DI02-R561">Semrock Di02-R561</a>&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>

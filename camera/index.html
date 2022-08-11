@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://willgiang.github.io/scope-docs/camera/">
+        <link rel="canonical" href="https://willgiang.github.io/scope-docs-site/camera/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.6">
@@ -562,6 +562,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FRAP/" class="md-nav__link">
+        FRAP / Photostimulation
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -689,7 +703,7 @@
   <h1>Camera</h1>
 
 <h2 id="bit-depth">Bit Depth<a class="headerlink" href="#bit-depth" title="Permanent link">#</a></h2>
-<p>Elements offers three different bit-depth options which should be chosen based on your application</p>
+<p>Elements offers three different bit-depth options for the Hamamatsu Fusion BT. The correct choice will depend on your experiment. </p>
 <dl>
 <dt><code>12-bit Sensitive</code></dt>
 <dd>
@@ -697,10 +711,10 @@
 </dd>
 <dt><code>12-bit</code></dt>
 <dd>
-<p><code>12-bit</code> doesn't have camera offset -&gt; not recommended </p>
+<p><code>12-bit</code> Zero camera offset. Dynamic range in between <code>12-bit Sensitive</code> and <code>16-bit</code>. Suggested for <mark class="critic">fixed imaging</mark></p>
 </dd>
 <dt><code>16-bit</code></dt>
-<dd><code>16-bit</code> is best suited for high dynamic range imaging and also features a camera offset of 100. Suggested for <mark class="critic">fixed imaging</mark>.</dd>
+<dd><code>16-bit</code> is best suited for high dynamic range imaging and also features a camera offset of 100. Suggested for <mark class="critic">fixed imaging</mark> where you need the highest dynamic range or for brightfield.</dd>
 </dl>
 <h2 id="scan-mode">Scan Mode<a class="headerlink" href="#scan-mode" title="Permanent link">#</a></h2>
 <p>Three options with different read-out speeds/noise levels and restrictions on minimum exposure time</p>
@@ -720,14 +734,14 @@
 </dl>
 <h2 id="roi">ROI<a class="headerlink" href="#roi" title="Permanent link">#</a></h2>
 <ul>
-<li>The CSU-X1 limits the field of view to a max of 7x10mm. With a 100x objective, this corresponds to 70um by 100um. </li>
+<li>The CSU-X1 limits the field of view to a max of 7x10mm. With a 100x objective and no other sources of magnification, the field of view roughly corresponds to 70um by 100um. </li>
 <li>Saved camera ROIs are saved in the Documents folder and can be loaded by clicking on the "ROI Size" button and pressing "Load ROI..." </li>
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">Laser illumination is not even across the field of view</p>
 <ul>
-<li>If you care about intensity measurements or will be using intensities for thresholding, I suggest fixing post-acquisition with flat field correction (e.g. BioVoxxel's pseudo flat-field correction) </li>
-<li>If acquiring tiled images, consider using the multipoints tab for grid selection and stitching in Fiji later</li>
+<li>If you care about intensity measurements or will be using intensities for thresholding, include a "flat field correction" processing step.    </li>
+<li>If acquiring tiled images, consider using the multipoints tab for grid selection and stitching after correcting each tile with <a href="https://www.nature.com/articles/ncomms14836">BaSiC</a>.</li>
 </ul>
 </div>
 
