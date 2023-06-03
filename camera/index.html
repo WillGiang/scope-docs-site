@@ -727,54 +727,69 @@
 
   <h1>Camera</h1>
 
+<p>The Hamamatsu ORCA-Fusion BT in NIS-Elements offers different options for bit-depth and readout speed. The correct choice will be determined by the experiment.</p>
 <h2 id="bit-depth">Bit Depth<a class="headerlink" href="#bit-depth" title="Permanent link">#</a></h2>
-<p>Elements offers three different bit-depth options for the Hamamatsu Fusion BT. The correct choice will depend on your experiment. </p>
 <table>
 <thead>
 <tr>
 <th>Bit-depth option</th>
 <th>Dynamic range</th>
 <th>Offset</th>
-<th>Use case</th>
+<th>Typical use case</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>12-bit Sensitive</code></td>
-<td>low</td>
+<td>Low</td>
 <td>100</td>
-<td>live-cell</td>
+<td>Live-cell</td>
 </tr>
 <tr>
 <td><code>12-bit</code></td>
-<td>medium</td>
+<td>Medium</td>
 <td>0</td>
-<td>fixed</td>
+<td>Fixed</td>
 </tr>
 <tr>
 <td><code>16-bit</code></td>
-<td>high</td>
+<td>High</td>
 <td>100</td>
-<td>fixed</td>
+<td>Fixed</td>
 </tr>
 </tbody>
 </table>
 <h2 id="scan-mode">Scan Mode<a class="headerlink" href="#scan-mode" title="Permanent link">#</a></h2>
-<p>Three options with different read-out speeds/noise levels and restrictions on minimum exposure time</p>
-<p><code>Ultra-quiet</code></p>
-<ul>
-<li>Lowest read-out noise at the expense of speed (not usually an issue for fixed imaging)</li>
-<li>The low read-out noise is most beneficial when your signal is weak.</li>
-</ul>
-<p><code>Standard</code></p>
-<ul>
-<li>Should be considered the default for live-cell imaging</li>
-<li>With bright and photostable fluors, using <code>standard</code> in fixed imaging of large acquisitions can save some time.</li>
-</ul>
-<p><code>Fast</code></p>
-<ul>
-<li>Only recommended for very fast live-cell imaging between images and/or a difference of 10s of milliseconds matters (e.g. calcium imaging)</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>Scan mode</th>
+<th>Readout noise</th>
+<th>Readout speed</th>
+<th>Typical use case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Ultra-quiet</code></td>
+<td>Very low</td>
+<td>Slow</td>
+<td>Fixed imaging <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></td>
+</tr>
+<tr>
+<td><code>Standard</code></td>
+<td>Low-medium</td>
+<td>Medium</td>
+<td>Live-cell <sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></td>
+</tr>
+<tr>
+<td><code>Fast</code></td>
+<td>High</td>
+<td>Fast</td>
+<td>Very fast imaging<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup></td>
+</tr>
+</tbody>
+</table>
 <h2 id="roi">ROI<a class="headerlink" href="#roi" title="Permanent link">#</a></h2>
 <ul>
 <li>The CSU-X1 limits the field of view to a max of 7x10mm. With a 100x objective and no other sources of magnification, the field of view roughly corresponds to 70um by 100um. </li>
@@ -783,9 +798,26 @@
 <div class="admonition warning">
 <p class="admonition-title">Laser illumination is not even across the field of view</p>
 <ul>
-<li>If you care about intensity measurements or will be using intensities for thresholding, include a "flat field correction" processing step.    </li>
-<li>If acquiring tiled images, consider using the multipoints tab for grid selection and stitching after correcting each tile with <a href="https://www.nature.com/articles/ncomms14836">BaSiC</a>.</li>
+<li>If you care about intensity measurements or will be using intensities for thresholding, include a "flat field correction" processing step.</li>
+<li>If acquiring tiled images, consider using the multipoints tab for grid selection and stitching after correcting each tile with <a href="https://www.nature.com/articles/ncomms14836">BaSiC</a> or dye solutions<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup>.</li>
 </ul>
+</div>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Permissible for live-cell imaging if acquiring single images with a delay between timepoints longer than the readout time&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Or fixed imaging with bright signal and wanting to save time on tiled z-stacks&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>When 10s of milliseconds matters&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p>Contact Will for the dyes&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+</ol>
 </div>
 
 
