@@ -2,82 +2,146 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://willgiang.github.io/scope-docs-site/</loc>
+<<<<<<< HEAD
          <lastmod>2023-06-03</lastmod>
+=======
+         <lastmod>2023-10-12</lastmod>
+>>>>>>> 3f3f9d7 (update to newer mkdocs-material)
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://willgiang.github.io/scope-docs-site/FRAP/</loc>
+<<<<<<< HEAD
          <lastmod>2023-06-03</lastmod>
+=======
+         <lastmod>2023-10-12</lastmod>
+>>>>>>> 3f3f9d7 (update to newer mkdocs-material)
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://willgiang.github.io/scope-docs-site/alignment/</loc>
+<<<<<<< HEAD
          <lastmod>2023-06-03</lastmod>
+=======
+         <lastmod>2023-10-12</lastmod>
+>>>>>>> 3f3f9d7 (update to newer mkdocs-material)
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://willgiang.github.io/scope-docs-site/brightfield/</loc>
+<<<<<<< HEAD
          <lastmod>2023-06-03</lastmod>
+=======
+         <lastmod>2023-10-12</lastmod>
+>>>>>>> 3f3f9d7 (update to newer mkdocs-material)
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://willgiang.github.io/scope-docs-site/camera/</loc>
+<<<<<<< HEAD
          <lastmod>2023-06-03</lastmod>
+=======
+         <lastmod>2023-10-12</lastmod>
+>>>>>>> 3f3f9d7 (update to newer mkdocs-material)
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://willgiang.github.io/scope-docs-site/data-storage/</loc>
+<<<<<<< HEAD
          <lastmod>2023-06-03</lastmod>
+=======
+         <lastmod>2023-10-12</lastmod>
+>>>>>>> 3f3f9d7 (update to newer mkdocs-material)
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://willgiang.github.io/scope-docs-site/elements-tips/</loc>
+<<<<<<< HEAD
          <lastmod>2023-06-03</lastmod>
+=======
+         <lastmod>2023-10-12</lastmod>
+>>>>>>> 3f3f9d7 (update to newer mkdocs-material)
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://willgiang.github.io/scope-docs-site/light-paths-and-OCs/</loc>
+<<<<<<< HEAD
          <lastmod>2023-06-03</lastmod>
+=======
+         <lastmod>2023-10-12</lastmod>
+>>>>>>> 3f3f9d7 (update to newer mkdocs-material)
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://willgiang.github.io/scope-docs-site/nd-acquisition/</loc>
+<<<<<<< HEAD
          <lastmod>2023-06-03</lastmod>
+=======
+         <lastmod>2023-10-12</lastmod>
+>>>>>>> 3f3f9d7 (update to newer mkdocs-material)
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://willgiang.github.io/scope-docs-site/resources/</loc>
+<<<<<<< HEAD
          <lastmod>2023-06-03</lastmod>
+=======
+         <lastmod>2023-10-12</lastmod>
+>>>>>>> 3f3f9d7 (update to newer mkdocs-material)
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://willgiang.github.io/scope-docs-site/scope-body/</loc>
+<<<<<<< HEAD
          <lastmod>2023-06-03</lastmod>
+=======
+         <lastmod>2023-10-12</lastmod>
+>>>>>>> 3f3f9d7 (update to newer mkdocs-material)
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://willgiang.github.io/scope-docs-site/shut-down/</loc>
+<<<<<<< HEAD
          <lastmod>2023-06-03</lastmod>
+=======
+         <lastmod>2023-10-12</lastmod>
+>>>>>>> 3f3f9d7 (update to newer mkdocs-material)
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://willgiang.github.io/scope-docs-site/start-up/</loc>
+<<<<<<< HEAD
          <lastmod>2023-06-03</lastmod>
+=======
+         <lastmod>2023-10-12</lastmod>
+>>>>>>> 3f3f9d7 (update to newer mkdocs-material)
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://willgiang.github.io/scope-docs-site/tips-and-tricks/</loc>
+<<<<<<< HEAD
          <lastmod>2023-06-03</lastmod>
+=======
+         <lastmod>2023-10-12</lastmod>
+>>>>>>> 3f3f9d7 (update to newer mkdocs-material)
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://willgiang.github.io/scope-docs-site/troubleshooting/</loc>
+<<<<<<< HEAD
          <lastmod>2023-06-03</lastmod>
+=======
+         <lastmod>2023-10-12</lastmod>
+>>>>>>> 3f3f9d7 (update to newer mkdocs-material)
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://willgiang.github.io/scope-docs-site/updates/</loc>
+<<<<<<< HEAD
          <lastmod>2023-06-03</lastmod>
+=======
+         <lastmod>2023-10-12</lastmod>
+>>>>>>> 3f3f9d7 (update to newer mkdocs-material)
          <changefreq>daily</changefreq>
     </url>
 </urlset>
